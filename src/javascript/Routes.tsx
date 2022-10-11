@@ -6,6 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 // ---Pages
 import { HomePage } from 'Pages/Home/HomePage';
 import { Error404Page } from 'Pages/Error404/Error404Page';
+import { ServicePage } from 'Pages/Servicios/ServicePage';
+import { ContactPage } from 'Pages/Contacto/ContactPage';
 // ---Components
 import { GlobalProvider } from 'GlobalProvider/GlobalProvider';
 
@@ -20,6 +22,8 @@ export function WrappedRoutes(): ReactElement {
       <GlobalProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="Servicios" element={<ServicePage />} />
+          <Route path="Contacto" element={<ContactPage />} />
           <Route path="*" element={<Error404Page />} />
         </Routes>
       </GlobalProvider>

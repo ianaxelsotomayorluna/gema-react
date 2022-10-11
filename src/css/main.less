@@ -1,26 +1,178 @@
 // ----------------------------------GLOBALS------------------------------------
-//-----------------
-
-// -------------------------------GlobalProvider------------------------------------
+*{
+  font-family:  'Questrial';
+  color: #f47e20;
+  h2 {
+    color: white;
+  }
+  button{
+    height: 50px;
+    border: none;
+    background-color: #69696900;
+    font-size: 18px;
+}
+button:hover{
+  background-color: #fdfdfd7e;
+}
+}
+body {
+  background-image: url(../images/fondo.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-attachment: fixed;
+}
 //-----------------Navbar
 .Navbar{
-  background-color: @colorNavButtons;
-  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: #6969696c;
+  border-bottom: 1px solid #f47e20;
+  margin: 0 8% 0 8%;
+ section {
+  padding: 5px 0px;
+  font-size: 15px;
+  span {
+    border-right: 1px solid #f47e20;
+    margin: 0px 8px 0px 0px;
+    padding-right: 8px;
+    color: #fff;
+  }
+ }
+ a {
+  list-style: none; 
+  color: #fff;
+  padding: 5px 0px;
+  text-decoration: none;
+  font-weight: bold;
+ }
+ .Navbar img{
+  height: 60px;
+ }
+ .Navbar ul{
+  display:flex;
+  width: 90%;
+ }
 }
-//-----------------Footer
-.Footer{
-  background-color: @colorNavButtons;
-  width: 100%;
-}
-//-----------------
-
 // ----------------------------------cPages------------------------------------
 //-----------------HomeCont
 .HomeCont{
-  border: 1px solid @colorPrimary;
-  width: 96%;
-  margin: 30px auto;
-  padding: 10px;
+  p {
+    font-size: 18px;
+    font-family:  'Questrial';
+    color: white;
+  }
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: 1px solid #f47e20;
+  }
+  h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f47e20
+  }
+  h4 {  
+    font-size: 1.17em;
+    color: #fff
+  } 
+  img {
+    border-radius: 10%;
+    width: 240px;
+  }
+  .Foto {
+    margin: 140px 20px 0px 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .textoInfo {
+    margin: 83px 50px 0px 50px;
+  }
+  .container-final ul {
+    font-size: 14px;
+  }
+  .container-final p{
+    font-size: 14px;
+    color: #f47e20;
+  }
+  li{
+    color: #fff;
+  }
+}
+//------------------Servicios
+.ServiceCont {
+  align-items: center;
+  h1 {
+    margin: 110px 10px 0px 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #f47e20;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+  }
+  p {
+    font-size: 18px;
+    color: #fff;
+  }
+  section {
+  background-color: #6969696c;
+  width: 88%;
+  margin: 0px auto 50px auto;
+  padding: 20px 10px 10px 10px;
+  }
+  img {
+    display: block;
+    margin: 0px auto 15px auto;
+  }
+}
+//-----------------Contacto
+.ContactCont {
+  font-size: 25px;
+  p {
+    font-size: 15px;
+    color: #fff;
+  }
+  h1 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+  }
+  span {
+    color: #fff;
+    font-size: 25px;
+  }
+  section {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0 40% 0 40%;
+  }
+  img {
+    display: block;
+    margin: 100px auto 15px auto;
+  }
+  .Contactos {
+    text-align: center;
+    margin: 0px auto 60px auto;
+  }
+  div {
+    padding: 0px 70px;
+  }
+  }
+//-----------------Footer
+.Footer{
+  background-color: #6969696c;
+  text-align: center;
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f47e20;
+  }
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;  
+  }
+  a {
+    color: #f47e20; 
+    font-family: 'Courier New', Courier, monospace;
+  }
 }
 //-----------------Error404Cont
 .Error404Cont{
@@ -29,4 +181,3 @@
   margin: 30px auto;
   padding: 10px;
 }
-//-----------------

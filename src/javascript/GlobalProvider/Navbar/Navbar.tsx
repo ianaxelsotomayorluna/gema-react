@@ -1,5 +1,6 @@
 // ---Dependencies
 import { ReactElement } from 'react';
+import { NavbarNav } from './Components/NavbarNav';
 
 /**
  * Navbar Component: Ejemplo de navbar para la aplicación
@@ -9,7 +10,7 @@ export function Navbar(): ReactElement {
   // -----------------------RENDER
   return (
     <nav className="Navbar">
-      <h3>Navbar</h3>
+      <NavbarNav />
     </nav>
   );
 }
